@@ -1,0 +1,148 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  scroll-behavior: smooth; }
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 330px;
+  background-color: #f6f2f2; }
+
+img,
+audio,
+video,
+iframe,
+canvas,
+svg,
+picture {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+a:hover {
+  -webkit-box-shadow: inset 0 -2px 0 whithe;
+          box-shadow: inset 0 -2px 0 whithe;
+  opacity: 0.8; }
+
+.green {
+  border-top: 5px solid #45d3d3; }
+
+.red {
+  border-top: 5px solid #ea5353; }
+
+.orange {
+  border-top: 5px solid #fcaf4a; }
+
+.blue {
+  border-top: 5px solid #549ef2; }
+
+/*Responsive Fluid Desing*/
+/* 
+@link https://utopia.fyi/type/calculator?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+:root {
+  --step--2: clamp(0.91rem, 0.89rem + 0.1vw, 0.96rem);
+  --step--1: clamp(1.09rem, 1.05rem + 0.21vw, 1.2rem);
+  --step-0: clamp(1.31rem, 1.24rem + 0.37vw, 1.5rem);
+  --step-1: clamp(1.58rem, 1.46rem + 0.59vw, 1.88rem);
+  --step-2: clamp(1.89rem, 1.71rem + 0.89vw, 2.34rem);
+  --step-3: clamp(2.27rem, 2.01rem + 1.29vw, 2.93rem);
+  --step-4: clamp(2.72rem, 2.36rem + 1.83vw, 3.66rem);
+  --step-5: clamp(3.27rem, 2.75rem + 2.56vw, 4.58rem); }
+
+/*Style-Site*/
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1rem; }
+  main .container {
+    margin-top: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    main .container-header {
+      text-align: center; }
+      main .container-header span {
+        color: #a3a5ae;
+        font-size: 1.5rem; }
+      main .container-header h1 {
+        color: #4c4e61;
+        font-size: var(--step-1);
+        margin-top: -1px; }
+      main .container-header p {
+        color: #a3a5ae;
+        margin-top: -4px; }
+    main .container .container-cards {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 3rem;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      main .container .container-cards .cards-card {
+        max-width: 380px;
+        background-color: #fafafa;
+        padding: 1rem;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        main .container .container-cards .cards-card h2 {
+          margin: 1rem;
+          color: #4c4e61; }
+        main .container .container-cards .cards-card p {
+          color: #a3a5ae;
+          margin: 1rem;
+          margin-top: -1px; }
+        main .container .container-cards .cards-card svg {
+          margin: 1rem;
+          -ms-flex-item-align: end;
+              align-self: flex-end; }
+
+/*MediaQueries*/
+@media (min-width: 75em) {
+  .container .container-cards .cards-card:nth-child(1) {
+    position: absolute;
+    margin-right: 55rem;
+    margin-top: 1rem; }
+  .container .container-cards .cards-card:nth-child(2) {
+    position: relative; }
+  .container .container-cards .cards-card:nth-child(4) {
+    position: absolute;
+    margin-left: 55rem; } }

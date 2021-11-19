@@ -1,0 +1,93 @@
+@import "Variables";
+@import "Reseteo";
+@import "Utilitis";
+
+/*Responsive Fluid Desing*/ /* 
+@link https://utopia.fyi/type/calculator?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+:root {
+  --step--2: clamp(0.91rem, 0.89rem + 0.1vw, 0.96rem);
+  --step--1: clamp(1.09rem, 1.05rem + 0.21vw, 1.2rem);
+  --step-0: clamp(1.31rem, 1.24rem + 0.37vw, 1.5rem);
+  --step-1: clamp(1.58rem, 1.46rem + 0.59vw, 1.88rem);
+  --step-2: clamp(1.89rem, 1.71rem + 0.89vw, 2.34rem);
+  --step-3: clamp(2.27rem, 2.01rem + 1.29vw, 2.93rem);
+  --step-4: clamp(2.72rem, 2.36rem + 1.83vw, 3.66rem);
+  --step-5: clamp(3.27rem, 2.75rem + 2.56vw, 4.58rem);
+}
+
+/*Card-Component*/
+main {
+  max-width: 1440px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $Main-dark-blue;
+  .card {
+    max-width: 350px;
+    min-width: 300px;
+    max-height: 590px;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: $Card-dark-blue;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: -20px -20px 20px$Main-dark-blue-shadow,
+      20px 20px 30px $Main-dark-blue-shadow;
+    &-imagen img {
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+    &-body {
+      margin-top: 1.3rem;
+      margin-bottom: 1rem;
+      border-bottom: thin solid $Line-dark-blue;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: var(--step-0);
+        padding-bottom: 0.8rem;
+        color: $White;
+      }
+      p {
+        font-size: var(--step--0);
+        padding-bottom: 0.9rem;
+        color: $Soft-blue;
+        line-height: 1.5rem;
+      }
+      .card-body-footer {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        span {
+          font-size: var(--step--1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+    &-footer {
+      display: flex;
+      align-items: center;
+      p {
+        margin-left: 1rem;
+        font-size: var(--step--0);
+        color: $White;
+        span {
+          margin-right: 0.5rem;
+          color: $Soft-blue;
+        }
+      }
+    }
+  }
+}

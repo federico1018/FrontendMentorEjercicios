@@ -1,0 +1,74 @@
+.card{
+    background-color: $card-back;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 1140px;
+    margin: 7%;
+}
+.card-text-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6%;
+
+    .blockk{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 85%;
+    }
+    h1{
+        color: $main-he;
+        font-size: 3.4rem;
+        margin-bottom: 2.8rem;
+        line-height: 4.2rem;
+        letter-spacing: 0.6px;
+    }
+    span{
+        color: $scca;
+    }
+    .text{
+        color: $main-para;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.5px;
+    }
+}
+.stat{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+    &-block{
+        display: flex;
+        flex-direction: column;
+    }
+    &-num {
+        color: $main-he;
+        font-weight: bold;
+        font-size: 2.2rem;
+    }
+    &-title{
+        color: $main-heigh;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-size: 1.2rem;
+        margin-top: 0.8rem;
+    }
+}
+
+
+
+.card-img-part{
+    background-color: $scca;
+}
+img{
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+.img-mobile{
+    display: none;
+}

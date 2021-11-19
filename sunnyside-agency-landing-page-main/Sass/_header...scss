@@ -1,0 +1,55 @@
+.header-cont {
+  max-width: 1440px;
+  height: 100vh;
+  background-image: url(/sunnyside-agency-landing-page-main/images/desktop/image-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .header-nav {
+    height: 5rem;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-enlaces {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      a {
+        margin-right: 1rem;
+        text-align: center;
+        width: 6rem;
+        padding: 0.5rem;
+        border-radius: 10rem;
+        color: $White;
+        transition: all 0.5s ease-in-out;
+      }
+      a:hover {
+        color: $Verydark;
+        background-color: $White;
+      }
+    }
+  }
+  .header-hero-text {
+    margin-top: 5rem;
+    text-align: center;
+
+    h1 {
+      color: $White;
+      letter-spacing: 0.6rem;
+      font-size: 4rem;
+      margin-bottom: 4rem;
+    }
+  }
+}
+@media (max-width: 680px) {
+  .header-enlaces {
+    pointer-events: none;
+    opacity: 0;
+  }
+}

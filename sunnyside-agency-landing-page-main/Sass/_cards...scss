@@ -1,0 +1,73 @@
+.cards-cont {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  .card-cont {
+    height: 100%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    h2 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 0.8rem;
+      color: $Verydarkgrayishblue;
+    }
+    a {
+      border-bottom: 5px solid $Yellow;
+    }
+    .a-2 {
+      border-bottom: 5px solid $Softred;
+    }
+  }
+  article:nth-child(5) {
+    background-image: url(/sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
+  article:nth-child(6) {
+    background-image: url(/sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
+  .padding {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 850px) {
+  .cards-cont {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    .card-cont p {
+      font-size: 1.1rem;
+    }
+    .padding {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+    }
+    article:nth-child(2) {
+      order: -1;
+    }
+  }
+}

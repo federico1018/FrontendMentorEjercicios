@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed";
+  font-size: 13px;
+  scroll-behavior: smooth;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  background-color: $Lightgrayishblue;
+  overflow-x: hidden;
+  min-width: 310px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 45px;
+  max-width: 100%;
+  height: auto;
+  /*Object-fit:cover*/
+  border-radius: 50%;
+}
+.img-border {
+  border: 2px solid $Moderateviolet;
+}
+a {
+  text-decoration: none;
+  border: none;
+}
+h2 {
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 14px;
+  }
+}
