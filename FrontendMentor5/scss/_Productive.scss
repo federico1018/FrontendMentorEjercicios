@@ -1,0 +1,129 @@
+.productive {
+  background-image: url(/FrontendMentor5/images/bg-curve.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  &__info {
+    margin-top: 4rem;
+    .content {
+      &__title {
+        font-size: var(--step-0);
+        text-align: center;
+        color: $Very-Dark-Blue;
+      }
+      &__paragraph {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        line-height: 1.5rem;
+        font-size: var(--step--1);
+        color: $Very-Dark-Blue;
+      }
+      &__enlace {
+        max-width: 180px;
+        margin: 0 auto;
+        display: flex;
+        padding: 4px;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+        color: $Moderate-Cyan;
+        border-bottom: 2px solid $Moderate-Cyan;
+        span {
+          padding-bottom: 2px;
+        }
+        svg {
+          background-color: $Moderate-Cyan;
+          border-radius: 100%;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          -ms-border-radius: 100%;
+          -o-border-radius: 100%;
+        }
+        &:hover {
+          color: hsl(170, 45%, 60%);
+        }
+      }
+    }
+    .card {
+      max-width: 430px;
+      min-width: 300px;
+      margin: 0 auto;
+      margin-top: 3rem;
+      padding: 2rem;
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      &__paragraph {
+        color: $Very-Dark-Blue;
+        line-height: 1.7rem;
+        font-size: var(--step--0);
+      }
+      .perfil {
+        display: flex;
+        align-items: center;
+        &__img {
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+        }
+        &__info {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1rem;
+        }
+        &__name {
+          color: $Very-Dark-Blue;
+        }
+        &__text {
+          color: $Desaturated-Blue;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 60em) {
+  .productive {
+    width: 100vw;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    &__img {
+      width: 50%;
+    }
+    &__info {
+      width: 50%;
+      margin-top: 0;
+      padding: 0;
+      .content {
+        flex-direction: column;
+        justify-content: center;
+        &__title {
+          text-align: left;
+          font-size: 2.4rem;
+          font-weight: bold;
+        }
+        &__paragraph {
+          font-size: var(--step--2);
+          max-width: 80%;
+        }
+        &__enlace {
+          margin: 0;
+          margin-top: -1rem;
+        }
+      }
+    }
+    .card {
+      margin: 0;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
