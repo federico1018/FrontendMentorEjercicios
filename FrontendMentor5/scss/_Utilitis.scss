@@ -1,3 +1,33 @@
 .espaciado {
   padding: 2.2rem;
 }
+.btn-text {
+  height: 3rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  font-size: var(--step--2);
+  border-radius: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  &::placeholder {
+    color: $Light-Gray;
+  }
+}
+.btn-submit {
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+  font-size: var(--step--1);
+  background-color: $Bright-Blue;
+  color: $Light-Grayish-Blue;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  &:hover {
+    background-color: hsl(224, 93%, 78%);
+  }
+}

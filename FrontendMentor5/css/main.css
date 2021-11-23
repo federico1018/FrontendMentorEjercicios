@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*Modularización De Codigo*/
 html {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
@@ -49,6 +51,12 @@ h4 {
   margin: 0;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /*
 320px / 16px = 20em
 
@@ -68,6 +76,38 @@ h4 {
 */
 .espaciado {
   padding: 2.2rem;
+}
+
+.btn-text {
+  height: 3rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  font-size: var(--step--2);
+  border-radius: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.btn-text::placeholder {
+  color: #bfbfbf;
+}
+
+.btn-submit {
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+  font-size: var(--step--1);
+  background-color: #3065f8;
+  color: #f6f6fe;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.btn-submit:hover {
+  background-color: #93affb;
 }
 
 .header {
@@ -325,6 +365,100 @@ h4 {
     margin-bottom: 2rem;
   }
 }
+.access {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+  background-color: #585989;
+  color: white;
+}
+.access .info-title {
+  font-size: var(--step-0);
+}
+.access .info-paragraph {
+  font-size: var(--step--0);
+  line-height: 1.8rem;
+}
+.access-form {
+  width: 80%;
+  margin: 1rem 0 1rem 0;
+}
+.access-form .form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 60em) {
+  .access {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+    gap: 20rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+  }
+  .access .info-title {
+    font-size: var(--step-1);
+  }
+  .access-form {
+    width: 100%;
+  }
+  .access-form .form-btn {
+    max-width: 200px;
+  }
+}
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  display: grid;
+  gap: 3rem;
+  background-color: #070439;
+  color: white;
+  font-size: var(--step-0);
+}
+.footer .contenedores {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  font-size: var(--step--1);
+}
+.footer .contenedores a,
+.footer .contenedores svg {
+  color: white;
+  margin-top: 0.9rem;
+}
+.footer .logo * {
+  margin-bottom: 1rem;
+}
+.footer .svg-social {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.footer .svg-social svg {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@media screen and (min-width: 60em) {
+  .footer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 /*Responsive Fluid Desing
 @link https://utopia.fyi/type/calculator?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
 :root {
@@ -338,6 +472,7 @@ h4 {
   --step-5: clamp(3.27rem, 2.75rem + 2.56vw, 4.58rem);
 }
 
+/*Main*/
 main {
   max-width: 8000px;
   min-width: 230px;

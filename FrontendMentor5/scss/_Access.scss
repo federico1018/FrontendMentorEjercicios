@@ -1,0 +1,48 @@
+.access {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+  background-color: $Desaturated-Blue;
+  color: $white;
+  .info {
+    &-title {
+      font-size: var(--step-0);
+    }
+    &-paragraph {
+      font-size: var(--step--0);
+      line-height: 1.8rem;
+    }
+  }
+  &-form {
+    width: 80%;
+    margin: 1rem 0 1rem 0;
+    .form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (min-width: 60em) {
+  .access {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+    gap: 20rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+    .info {
+      &-title {
+        font-size: var(--step-1);
+      }
+    }
+    &-form {
+      width: 100%;
+      .form {
+        &-btn {
+          max-width: 200px;
+        }
+      }
+    }
+  }
+}
