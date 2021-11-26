@@ -1,0 +1,63 @@
+.generation {
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  .container-phone {
+    height: 300px;
+    margin: 0 -4rem;
+    background: url(/FrontendMentor6/images/image-mockups.png) center bottom
+        no-repeat,
+      url(/FrontendMentor6/images/bg-intro-mobile.svg) center no-repeat;
+    background-size: 340px, cover;
+    .none {
+      display: none;
+    }
+  }
+  .container-generation {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+}
+@media screen and(min-width:60.5em) {
+  .generation {
+    display: flex;
+    justify-content: flex-end;
+    .contenedor-desktop {
+      width: 95%;
+      height: 580px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .container-generation {
+      padding-bottom: 0;
+      width: 420px;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      text-align: left;
+    }
+    .container-phone {
+      position: relative;
+      overflow: hidden;
+      width: 650px;
+      height: 100%;
+      margin: 0;
+      order: 1;
+      background-image: url(/FrontendMentor6/images/bg-intro-desktop.svg);
+      background-size: 995px;
+      background-position: right -320px top -200px;
+      .none {
+        display: block;
+        position: absolute;
+        right: -75px;
+        top: -60px;
+        height: 45rem;
+      }
+    }
+  }
+}
