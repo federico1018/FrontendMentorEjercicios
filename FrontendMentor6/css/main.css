@@ -12,7 +12,6 @@ html {
 }
 
 body {
-  width: 100vw;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -154,7 +153,6 @@ h1 {
 .generation {
   width: 100%;
   padding-left: 2rem;
-  padding-right: 2rem;
 }
 .generation .container-phone {
   height: 300px;
@@ -173,6 +171,7 @@ h1 {
   align-items: center;
   text-align: center;
   padding-bottom: 4rem;
+  padding-left: 1rem;
 }
 
 @media screen and (min-width: 60.5em) {
@@ -214,23 +213,35 @@ h1 {
   }
 }
 .easybank {
+  width: 100%;
   background-color: #f3f4f6;
   padding: 2rem 0;
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .easybank .container-bank .bank__title {
+  padding-top: 2rem;
   font-size: var(--step-2);
   color: #2d314d;
   font-weight: 400;
 }
 .easybank .container-bank .choose {
+  max-width: 350px;
   cursor: pointer;
 }
 .easybank .container-bank .choose__title {
   color: #2d314d;
   font-weight: 300;
+}
+.easybank h3,
+.easybank h2,
+.easybank img {
+  margin-bottom: 2rem;
+}
+.easybank p {
+  margin-bottom: 4rem;
 }
 
 @media screen and (min-width: 60.5em) {
@@ -239,11 +250,141 @@ h1 {
     display: grid;
     gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 200px 1fr;
   }
-
-  .bank {
+  .container-bank .bank {
     grid-column: 1/5;
+  }
+  .container-bank .bank__paragraph {
+    margin-bottom: 88rem;
+  }
+}
+.articles {
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.articles .container-articles .article-header {
+  padding-top: 2rem;
+  text-align: center;
+}
+.articles .container-articles .article-header__title {
+  font-size: var(--step-2);
+  color: #2d314d;
+  font-weight: 400;
+}
+.articles .card {
+  max-width: 350px;
+  min-height: 400px;
+  margin-top: 3rem;
+}
+.articles .card__img {
+  height: 45%;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
+.articles .card .card-relleno {
+  padding: 2rem;
+  display: flex;
+  gap: 0.7rem;
+  flex-direction: column;
+  color: #9698a6;
+}
+.articles .card .card-relleno__small {
+  margin: 0;
+}
+.articles .card .card-relleno__title {
+  margin: 0;
+  font-weight: 700;
+}
+.articles .card .card-relleno__paragraph {
+  margin: 0;
+  font-weight: 200;
+}
+
+@media screen and (min-width: 64.5em) {
+  .container-articles {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .container-articles .article-header {
+    grid-column: 1/5;
+    margin-bottom: -4rem;
+  }
+  .container-articles .article-header__title {
+    text-align: left;
+  }
+}
+.footer {
+  width: 100%;
+  padding: 3rem 0;
+  margin-top: 3rem;
+  background-color: #2d314d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .container-footer {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer .container-footer .grupos1 {
+  color: #9698a6;
+}
+.footer .container-footer .grupos1__icons {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+.footer .container-footer .grupos2 {
+  display: flex;
+  flex-direction: column;
+}
+.footer .container-footer .grupos2__links {
+  color: #9698a6;
+}
+.footer .container-footer .grupos3 {
+  margin-top: -1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.footer .container-footer .grupos3__links {
+  color: #9698a6;
+}
+.footer .container-footer .grupos4 {
+  width: 12rem;
+}
+.footer .container-footer .grupos5 {
+  color: #9698a6;
+}
+
+@media screen and (min-width: 60.5em) {
+  .footer .container-footer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .footer .container-footer a {
+    margin-bottom: 0.2rem;
+  }
+  .footer .container-footer .grupos3 {
+    margin-top: 0;
+  }
+  .footer .container-footer .grupos5 {
+    grid-column: 1/5;
+    grid-row: 2/3;
   }
 }
 /*Responsive Fluid Desing

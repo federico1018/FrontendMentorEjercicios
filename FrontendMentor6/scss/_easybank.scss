@@ -1,24 +1,36 @@
 .easybank {
+  width: 100%;
   background-color: $Light-Grayish-Blue;
   padding: 2rem 0;
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   .container-bank {
     .bank {
       &__title {
+        padding-top: 2rem;
         font-size: var(--step-2);
         color: $Dark-Blue;
         font-weight: 400;
       }
     }
     .choose {
+      max-width: 350px;
       cursor: pointer;
       &__title {
         color: $Dark-Blue;
         font-weight: 300;
       }
     }
+  }
+  h3,
+  h2,
+  img {
+    margin-bottom: 2rem;
+  }
+  p {
+    margin-bottom: 4rem;
   }
 }
 @media screen and (min-width: 60.5em) {
@@ -27,9 +39,12 @@
     display: grid;
     gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 150px 1fr;
-  }
-  .bank {
-    grid-column: 1 / 5;
+    grid-template-rows: 200px 1fr;
+    .bank {
+      grid-column: 1 / 5;
+      &__paragraph {
+        margin-bottom: 88rem;
+      }
+    }
   }
 }
