@@ -1,0 +1,67 @@
+.different {
+  padding: 6rem 2rem;
+  .different-container {
+    //Header-hr-title
+    .header-container {
+      &__hr {
+        max-width: 45%;
+        margin-bottom: 2rem;
+        border-color: map-get($colors, "DarkViolet");
+      }
+      &__title {
+        margin-bottom: 3rem;
+        font-weight: 100;
+        font-size: var(--step-4);
+        font-family: $headings;
+        color: map-get($colors, "VeryViolet");
+        text-align: center;
+      }
+    }
+    //Cards
+    .card-container {
+      @include flex();
+      margin-bottom: 4rem;
+      gap: 1rem;
+      &__title {
+        font-size: var(--step-1);
+        color: map-get($colors, "VeryViolet");
+      }
+      &__paragraph {
+        line-height: 1.5rem;
+        text-align: center;
+        color: map-get($colors, "DarksViolet");
+      }
+    }
+  }
+}
+//MediaQuerie DIFFERENT
+@media screen and (min-width: 64em) {
+  .different {
+    margin-top: 5rem;
+    .different-container {
+      @include grid($espacio: 3rem);
+      grid-template-columns: repeat(3, 1fr);
+      .header-container {
+        grid-column: 1/4;
+        &__hr {
+          max-width: 10%;
+          margin-left: 0;
+          margin-bottom: 2rem;
+        }
+        &__title {
+          text-align: justify;
+          margin-bottom: 2rem;
+        }
+      }
+      .card-container {
+        align-items: flex-start;
+        &__img {
+          margin-bottom: 1rem;
+        }
+        &__paragraph {
+          text-align: justify;
+        }
+      }
+    }
+  }
+}

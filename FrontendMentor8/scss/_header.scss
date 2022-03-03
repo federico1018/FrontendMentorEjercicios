@@ -1,10 +1,11 @@
 /****HEADER****/
 .header {
-  width: 100%;
+  position: sticky;
+  top: 0;
+  padding: 2rem;
+  z-index: 999;
+  background-color: map-get($colors, "LightGray");
   .container {
-    width: 100%;
-    padding: 2rem;
-    position: fixed;
     @include flex($direction: row, $just: space-between);
     //Logo{
     .logo {
@@ -32,8 +33,10 @@
       background-image: url(/FrontendMentor8/assets/bg-pattern-mobile-nav.svg);
       background-repeat: no-repeat;
       background-position: 0% 85%;
+      pointer-events: none;
       &__enlace {
         min-width: 300px;
+        padding: 0.8rem 0.8rem;
         text-align: center;
         text-transform: uppercase;
         font-weight: bold;
@@ -41,7 +44,9 @@
         color: map-get($colors, "LightGray");
         transition: outline 2s;
         &:hover {
-          padding: 0.5rem;
+          outline: 2px solid map-get($colors, "LightGray");
+        }
+        &--border {
           outline: 2px solid map-get($colors, "LightGray");
         }
       }
@@ -55,9 +60,7 @@
 //MediaQuerie HEADER
 @media screen and (min-width: 64em) {
   .header {
-    position: fixed;
     .container {
-      position: static;
       @include flex($direction: row, $just: space-between);
       .logo {
         svg {
@@ -74,17 +77,20 @@
         background-color: inherit;
         background-image: none;
         @include flex($direction: row, $just: flex-end);
-        gap: 2rem;
+        gap: 0.2rem;
         opacity: 1;
         pointer-events: auto;
         &__enlace {
           min-width: 80px;
-          padding: 0.5rem 0.7rem;
+          padding: 0.7rem 1.2rem;
           color: map-get($colors, "DarksViolet");
-          font-size: var(--step--2);
+          font-size: 0.9rem;
+          transition: background-color 1.2s ease;
           &:hover {
             color: map-get($colors, "LightGray");
             background-color: map-get($colors, "DarkViolet");
+          }
+          &--border {
             outline: 2px solid map-get($colors, "DarkViolet");
           }
         }

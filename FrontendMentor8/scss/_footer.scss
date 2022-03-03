@@ -1,0 +1,87 @@
+.footer {
+  position: relative;
+  .container {
+    margin: 6rem 0;
+    &__picture {
+      position: absolute;
+      top: 0;
+    }
+    //ICONOS-LOGO
+    .networks {
+      padding-top: 6rem;
+      @include flex();
+      gap: 1.9rem;
+      .networks-icons {
+        padding-bottom: 1.5rem;
+        @include flex($direction: row);
+        gap: 0.7rem;
+      }
+    }
+    //HR
+    .footer-hr {
+      max-width: 85%;
+      border-color: map-get($colors, "LightGray");
+    }
+    //ENLACES NAV
+    .information {
+      .information-nav {
+        margin: 1.7rem;
+        @include flex();
+        gap: 0.5rem;
+        &__title {
+          margin-bottom: 1.5rem;
+          font-size: var(--step--2);
+          text-transform: uppercase;
+          color: map-get($colors, "DarksViolet");
+        }
+        &__enlace {
+          font-size: var(--step--2);
+          text-transform: uppercase;
+          color: map-get($colors, "DarkViolet");
+          font-weight: bold;
+          margin: 0.2rem 0;
+          transition: opacity 1s ease;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}
+//MediaQuerie FOOTER
+@media screen and (min-width: 64em) {
+  .footer {
+    margin: 7rem 0;
+    .container {
+      margin: 0 auto;
+      &__picture {
+        left: 0;
+      }
+      .networks {
+        padding: 2rem 0;
+        flex-direction: row;
+        justify-content: space-between;
+        .networks-icons {
+          padding: 0;
+        }
+      }
+      .footer-hr {
+        max-width: 100%;
+      }
+      .information {
+        max-width: 85%;
+        @include flex(
+          $direction: row,
+          $just: space-between,
+          $align: flex-start
+        );
+        gap: 0;
+        .information-nav {
+          margin: 2rem 0;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}

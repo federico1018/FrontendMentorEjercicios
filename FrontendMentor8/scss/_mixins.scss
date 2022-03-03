@@ -9,8 +9,7 @@
 }
 
 //Mixin GRID.
-@mixin grid($columnas, $espacio) {
+@mixin grid($espacio) {
   display: grid;
-  grid-template-columns: ($columnas, 1fr);
   gap: $espacio;
 }
