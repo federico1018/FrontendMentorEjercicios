@@ -5,6 +5,8 @@
 
 Acá encontraras varios ejercicios finalizados, mi idea es ir subiendo todos los ejercicios que haga y asi vere mis avances.
 
+-NO HE SUBIDO NADA DESDE HACE MUCHO TIEMPO PERO VOLVERE.
+
 <hr>
 
 <h2>Como visualizo este Proyecto?</h2>
