@@ -6,7 +6,7 @@
 Acá encontraras varios ejercicios finalizados, mi idea es ir subiendo todos los ejercicios que haga y asi vere mis avances.
 
 *RETOMAR EJERCICIOS PERO AHORA INCLUIIR JAVASCRIPT.
-
+*Prueba día uno GIT*
 <hr>
 
 <h2>Como visualizo este Proyecto?</h2>
