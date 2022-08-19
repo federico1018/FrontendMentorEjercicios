@@ -1,11 +1,12 @@
 <h1>Ejercicios Completos FRONTENDMENTOR</h1>
 
 <h2>Federico Aldana A.</h2>
-<h2>Diseñador/Desarrollador Frontend.</h2>
+<h2>Maquetador/Frontend Developer.</h2>
 
 Acá encontraras varios ejercicios finalizados, mi idea es ir subiendo todos los ejercicios que haga y asi vere mis avances.
 
 *RETOMAR EJERCICIOS PERO AHORA INCLUIIR JAVASCRIPT.
+
 *Prueba día uno GIT*
 <hr>
 
