@@ -7,7 +7,8 @@ Acá encontraras varios ejercicios finalizados, mi idea es ir subiendo todos los
 
 *RETOMAR EJERCICIOS PERO AHORA INCLUIIR JAVASCRIPT.
 
-*Prueba día uno GIT*
+*Prueba día uno GIT-HUB*
+*Prueba día dos GIT-HUB*
 <hr>
 
 <h2>Como visualizo este Proyecto?</h2>
